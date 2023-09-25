@@ -10,3 +10,5 @@ Current bugs in the application:
 *** -- For example when the windows is pushed full screen. -- 
 
 This goes everywhere in the application.
+
+A short video has been provide to showcase the bugs.
