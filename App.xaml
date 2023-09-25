@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTestCore.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <!--#region region Colors -->
+            <Color x:Key="DarkBackground">#160D0C</Color>
+            <Color x:Key="DarkBackgroundSecond">#332322</Color>
+            <Color x:Key="DarkBorderColor">#836A67</Color>
+            <Color x:Key="DarkButtonBorder">#846A67</Color>
+            <Color x:Key="DarkDarkest">#3A2624</Color>
+            <Color x:Key="DarkMedium">#4B3835</Color>
+            <Color x:Key="DarkLight">#937270</Color>
+            <Color x:Key="DarkLightest">#836A67</Color>
+            <Color x:Key="DarkColored">#6B262B</Color>
+            <Color x:Key="DarkTextColor">#FFF9F8</Color>
+
+            <Color x:Key="LightBackground">#FFF9F8</Color>
+            <Color x:Key="LightBackgroundSecond">#F2EAE9</Color>
+            <Color x:Key="LightBorderColor">#CEB8B6</Color>
+            <Color x:Key="LightButtonBorder">#CEB8B6</Color>
+            <Color x:Key="LightDarkest">#A08684</Color>
+            <Color x:Key="LightMedium">#CEB8B6</Color>
+            <Color x:Key="LightLight">#E0B8B5</Color>
+            <Color x:Key="LightLightest">#E8DEDD</Color>
+            <Color x:Key="LightColored">#AA4955</Color>
+            <Color x:Key="LightTextColor">#160D0C</Color>
+
+            <Color x:Key="ColorRed">#931B1E</Color>
+            <Color x:Key="ColorOrange">#B45441</Color>
+            <Color x:Key="ColorGreen">#127E40</Color>
+            <!--#endregion-->
+
+            <Style x:Key="PageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" 
+                        Value="{AppThemeBinding 
+                        Dark={StaticResource DarkBackground}, 
+                        Light={StaticResource LightBackground}}"/>
+                <Setter Property="NavigationPage.HasNavigationBar" Value="False"/>
+                <Setter Property="NavigationPage.HasBackButton" Value="False"/>
+                <Setter Property="Shell.NavBarIsVisible" Value="False"/>
+                <Setter Property="Shell.TabBarIsVisible" Value="False"/>
+                <Setter Property="Padding" Value="5"/>
+            </Style>
+
+            <Style x:Key="MainAbsoluteLayout" TargetType="AbsoluteLayout">
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+
+            <Style x:Key="FrameAbsoluteLayoutMain" TargetType="Frame">
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0,0,1,1" />
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="All" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="IsClippedToBounds" Value="True" />
+            </Style>
+
+            <Style x:Key="RoundFrame" TargetType="Frame">
+                <Setter Property="Padding" Value="5" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="IsClippedToBounds" Value="True" />
+            </Style>
+
+            <Style x:Key="SpacingZeroRoundFrame" TargetType="Frame">
+                <Setter Property="Padding" Value="5" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="IsClippedToBounds" Value="True" />
+            </Style>
+
+            <Style x:Key="ZeroSpacingRoundFrame" TargetType="Frame">
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="IsClippedToBounds" Value="True" />
+            </Style>
+
+            <Style x:Key="ZeroSpacingFrame" TargetType="Frame">
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="IsClippedToBounds" Value="True" />
+            </Style>
+
+            <Style x:Key="ButtonColorMedium" TargetType="Button">
+                <Setter Property="FontSize" Value="Micro"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor"
+                        Value="{AppThemeBinding
+                        Dark={StaticResource DarkMedium},
+                        Light={StaticResource LightMedium}}"/>
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding
+                        Dark={StaticResource DarkTextColor},
+                        Light={StaticResource LightTextColor}}"/>
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+
+            <Style x:Key="ButtonColorConfirm" TargetType="Button">
+                <Setter Property="FontSize" Value="Micro"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" 
+                        Value="{AppThemeBinding
+                        Dark={StaticResource DarkColored},
+                        Light={StaticResource LightColored}}"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+            
+            <Style x:Key="CustomEntry" TargetType="Entry">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+                <Setter Property="VerticalTextAlignment" Value="Start"/>
+                <Setter Property="BackgroundColor"
+                        Value="{AppThemeBinding
+                        Dark={StaticResource DarkBackground},
+                        Light={StaticResource LightBackground}}"/>
+                <Setter Property="PlaceholderColor"
+                        Value="{AppThemeBinding
+                        Dark={StaticResource DarkTextColor},
+                        Light={StaticResource LightTextColor}}"/>
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding
+                        Dark={StaticResource DarkTextColor},
+                        Light={StaticResource LightTextColor}}"/>
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

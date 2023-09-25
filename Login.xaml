@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTestCore.Login"
+             xmlns:vm="clr-namespace:MauiTestCore.ViewModels"
+             x:DataType="vm:AuthenticateVM"
+             x:Name="LoginPage"
+             Style="{StaticResource PageStyle}">
+
+    <AbsoluteLayout Grid.Row="0" Grid.Column="1" Style="{StaticResource MainAbsoluteLayout}">
+
+        <Frame  Style="{StaticResource FrameAbsoluteLayoutMain}"
+                Padding="0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Margin="40,0,0,0">
+            <Grid RowDefinitions="auto,auto" ColumnDefinitions="200" RowSpacing="10"
+                  HorizontalOptions="Center">
+
+                <Grid RowDefinitions="auto,auto,auto,auto" RowSpacing="10">
+                    <Frame  Grid.Row="0"
+                            Style="{StaticResource RoundFrame}"
+                            BackgroundColor="{AppThemeBinding Dark={StaticResource DarkMedium}, Light={StaticResource LightMedium}}"
+                            BorderColor="{AppThemeBinding Dark={StaticResource DarkBorderColor}, Light={StaticResource LightBorderColor}}"
+                            HeightRequest="140" WidthRequest="140"
+                            Padding="20"
+                            HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Image  Aspect="AspectFit"
+                                Source="dotnet_bot.png" />
+                    </Frame>
+
+                    <Frame  Grid.Row="1"
+                            Style="{StaticResource ZeroSpacingRoundFrame}"
+                            BorderColor="{AppThemeBinding Dark={StaticResource DarkBorderColor}, Light={StaticResource LightBorderColor}}">
+
+                        <Entry  x:Name="Username" Style="{StaticResource CustomEntry}"
+                                FontFamily="SF_regular"
+                                FontSize="Micro"
+                                Keyboard="Default"
+                                Placeholder="Username"
+                                TextChanged="Username_TextChanged" />
+                    </Frame>
+
+                    <Grid Grid.Row="2" ColumnDefinitions="0.9*,0.1*" ColumnSpacing="15">
+                        <Frame  Grid.Column="0"
+                                Style="{StaticResource ZeroSpacingRoundFrame}"
+                                BorderColor="{AppThemeBinding Dark={StaticResource DarkBorderColor}, Light={StaticResource LightBorderColor}}">
+                            <Entry  x:Name="Password" Style="{StaticResource CustomEntry}"
+                                    FontFamily="SF_regular"
+                                    FontSize="Micro"
+                                    Keyboard="Default"
+                                    IsPassword="{Binding IsPassword}"
+                                    Placeholder="Passowrd"
+                                    TextChanged="Password_TextChanged"/>
+                        </Frame>
+
+                        <Frame Grid.Column="1" Style="{StaticResource ZeroSpacingFrame}"
+                               HeightRequest="30" WidthRequest="30">
+                            <ImageButton    Aspect="AspectFit"
+                                            Source="{Binding ShowHidePassword}"
+                                            Clicked="ShowHidePassword_Clicked"/>
+                        </Frame>
+                    </Grid>
+
+                    <Grid Grid.Row="3" ColumnDefinitions="0.9*,0.1*" ColumnSpacing="15">
+                        <Frame  Grid.Column="0" Style="{StaticResource ZeroSpacingRoundFrame}">
+                            <Button  x:Name="LoginButton"
+                                                    Style="{StaticResource ButtonColorConfirm}"
+                                                    IsEnabled="False"
+                                                    Text="Login"
+                                                    FontFamily="SF_regular"
+                                                    Clicked="LoginButton_Clicked" />
+                        </Frame>
+
+                        <Frame Grid.Column="1" Style="{StaticResource ZeroSpacingFrame}"
+                               HeightRequest="30" WidthRequest="30">
+                            <ImageButton    Aspect="AspectFit"
+                                            Source="button_moreoption.png" 
+                                            Clicked="ShowHideButtons_Clicked"/>
+                        </Frame>
+                    </Grid>
+                </Grid>
+
+                <Frame  Grid.Row="1" Grid.Column="0"
+                        Style="{StaticResource RoundFrame}"
+                        BackgroundColor="{AppThemeBinding Dark={StaticResource DarkDarkest}, Light={StaticResource LightDarkest}}"
+                        IsVisible="{Binding ButtonsVisible}">
+                    <Grid RowDefinitions="40,40,40,40" RowSpacing="10">
+
+                        <Frame Grid.Row="0" Style="{StaticResource ZeroSpacingFrame}">
+                            <Button Style="{StaticResource ButtonColorMedium}"
+                                    Text="Create account"
+                                    FontFamily="SF_regular"
+                                    FontSize="Micro"
+                                    Clicked="Create_account_Clicked"/>
+                        </Frame>
+
+                        <Frame Grid.Row="1" Style="{StaticResource ZeroSpacingFrame}">
+                            <Button Style="{StaticResource ButtonColorMedium}"
+                                    Text="Legal notice"
+                                    FontFamily="SF_regular"
+                                    FontSize="Micro"
+                                    Clicked="Legal_notice_Clicked" />
+                        </Frame>
+
+                        <Frame Grid.Row="2" Style="{StaticResource ZeroSpacingFrame}">
+                            <Button Style="{StaticResource ButtonColorMedium}"
+                                    Text="Copyright"
+                                    FontFamily="SF_regular"
+                                    FontSize="Micro"
+                                    Clicked="Copyright_Clicked" />
+                        </Frame>
+
+                        <Frame  Grid.Row="3" Style="{StaticResource RoundFrame}"
+                                BackgroundColor="{AppThemeBinding Dark={StaticResource DarkMedium}, Light={StaticResource LightMedium}}">
+                            <Grid ColumnDefinitions="40,40,40" ColumnSpacing="10" HorizontalOptions="Center">
+                                <Frame Grid.Column="0" Style="{StaticResource ZeroSpacingFrame}">
+                                    <ImageButton    Aspect="AspectFit"
+                                                    x:Name="LinkedId"
+                                                    BackgroundColor="Transparent"
+                                                    Source="linkedin_logo.png"
+                                                    Clicked="LinkedId_Clicked" />
+                                </Frame>
+
+                                <Frame Grid.Column="1" Style="{StaticResource ZeroSpacingFrame}">
+                                    <ImageButton    Aspect="AspectFit"
+                                                    x:Name="Facebook"
+                                                    BackgroundColor="Transparent"
+                                                    Source="facebook_logo.png"
+                                                    Clicked="Facebook_Clicked" />
+                                </Frame>
+
+                                <Frame Grid.Column="2" Style="{StaticResource ZeroSpacingFrame}">
+                                    <ImageButton    Aspect="AspectFill"
+                                                    x:Name="Youtube"
+                                                    BackgroundColor="Transparent"
+                                                    Source="youtube_logo.png"
+                                                    Clicked="Youtube_Clicked" />
+                                </Frame>
+                            </Grid>
+                        </Frame>
+
+                    </Grid>
+                </Frame>
+            </Grid>
+        </Frame>
+
+    </AbsoluteLayout>
+
+</ContentPage>

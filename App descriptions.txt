@@ -1,0 +1,12 @@
+﻿Why the declaration of the viewmodel in App.cs ?
+The full application is very complexe and many values in many viewmodels are used to the contentpages, contentview and / or other viewmodels.
+To make sure that we retrieve the values in the code behind of the pages (in many cases with collectionview selectionchanged) we declared all viewmodels in app.cs
+
+Current bugs in the application:
+1. The viewmodel values change properly but nothing happen in the user interface,
+2. The user interface change sometimes when *** happens.
+3. Some svg declared as MauiImages are displayed sometimes when *** happens
+
+*** -- For example when the windows is pushed full screen. -- 
+
+This goes everywhere in the application.
