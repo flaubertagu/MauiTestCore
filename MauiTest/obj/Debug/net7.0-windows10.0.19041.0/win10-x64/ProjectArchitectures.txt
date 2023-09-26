@@ -1,0 +1,2 @@
+C:\Users\Flaubert TAGU\source\repos\MauiTestCore\MauiTest\MauiTest.csproj;x64
+C:\Users\Flaubert TAGU\source\repos\MauiTestCore\MauiTestCore\MauiTestCore.csproj;neutral
