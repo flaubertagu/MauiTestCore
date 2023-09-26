@@ -30,29 +30,5 @@
               Looks up a localized string similar to Hello, World!.
             </summary>
         </member>
-        <member name="T:MauiTestCore.ViewModels.AuthenticateVM">
-            <inheritdoc/>
-        </member>
-        <member name="P:MauiTestCore.ViewModels.AuthenticateVM.ButtonsVisible">
-            <inheritdoc cref="F:MauiTestCore.ViewModels.AuthenticateVM._buttonsVisible"/>
-        </member>
-        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
-            <summary>
-            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
-            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
-            </summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ButtonsVisible">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ButtonsVisible" generated properties.</summary>
-        </member>
-        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
-            <summary>
-            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
-            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
-            </summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ButtonsVisible">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ButtonsVisible" generated properties.</summary>
-        </member>
     </members>
 </doc>

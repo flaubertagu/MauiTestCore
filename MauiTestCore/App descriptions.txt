@@ -11,4 +11,4 @@ Current bugs in the application:
 
 This goes everywhere in the application.
 
-A short video has been provide to showcase the bugs.
+A short video has been provided in the mauitestcore project to showcase the bugs.

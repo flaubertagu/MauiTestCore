@@ -12,15 +12,15 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = MauiTest
-build_property.ProjectDir = C:\Users\Flaubert TAGU\source\repos\MauiTestCore\MauiTest\
+build_property.ProjectDir = C:\Users\Flaubert TAGU\source\repos\MauiTestCore\MauiTestCore\MauiTest\
 
-[C:/Users/Flaubert TAGU/source/repos/MauiTestCore/MauiTest/Resources/Styles/Colors.xaml]
+[C:/Users/Flaubert TAGU/source/repos/MauiTestCore/MauiTestCore/MauiTest/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiTest.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Flaubert TAGU/source/repos/MauiTestCore/MauiTest/Resources/Styles/Styles.xaml]
+[C:/Users/Flaubert TAGU/source/repos/MauiTestCore/MauiTestCore/MauiTest/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiTest.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

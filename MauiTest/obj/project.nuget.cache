@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kq+hPttZkqL/vFrkRxFjMhA8JLDF7VXT0wqukUN13Pdi+4IdQZVKG69S9H6f7qry5usHXDBr4I/WOf4qVV297w==",
+  "dgSpecHash": "Z13EICFFrFAPEp1FP5J4uqz9sKantiXajQtPzARL9w7Yl8p1of7CjGBnFKJr/coP9jKg+W7de2LgpHH6x5vO0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTest\\MauiTest.csproj",
+  "projectFilePath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTest\\MauiTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Flaubert TAGU\\.nuget\\packages\\communitytoolkit.maui\\5.2.0\\communitytoolkit.maui.5.2.0.nupkg.sha512",
     "C:\\Users\\Flaubert TAGU\\.nuget\\packages\\communitytoolkit.maui.core\\5.2.0\\communitytoolkit.maui.core.5.2.0.nupkg.sha512",

@@ -26773,11 +26773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTest\\MauiTest.csproj",
+      "projectUniqueName": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTest\\MauiTest.csproj",
       "projectName": "MauiTest",
-      "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTest\\MauiTest.csproj",
+      "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTest\\MauiTest.csproj",
       "packagesPath": "C:\\Users\\Flaubert TAGU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTest\\obj\\",
+      "outputPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTest\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -26804,32 +26804,32 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
-            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
-              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
+            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
+              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
             }
           }
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {
-            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
-              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
+            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
+              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
             }
           }
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "projectReferences": {
-            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
-              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
+            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
+              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
             }
           }
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
-              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
+            "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj": {
+              "projectPath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj"
             }
           }
         }

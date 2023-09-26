@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1L8NLDVT361aRdeFKMfhLk/IuMgpMyVymWkJXZ9Yb+nnpatL65Cxt6bY/p4AnbTWSyOgPYugf/VaEKmN4iE5Yw==",
+  "dgSpecHash": "JtEY+F67+6Mx7TlPfr9OO2hn98b7xlYlDDpu5J7BkogURKNUkkkkW+BgbY/LmHzsB/n2l4YwRRGLmeiP5+NHKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj",
+  "projectFilePath": "C:\\Users\\Flaubert TAGU\\source\\repos\\MauiTestCore\\MauiTestCore\\MauiTestCore\\MauiTestCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Flaubert TAGU\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\Flaubert TAGU\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
